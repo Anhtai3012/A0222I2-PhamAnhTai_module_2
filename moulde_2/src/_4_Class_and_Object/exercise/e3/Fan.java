@@ -4,29 +4,19 @@ public class Fan {
     public final int slow=1;
     public final int medium=2;
     public final int fast =3;
-    private int speed=slow;
-    private boolean on=false;
-    private double radius =5;
-    private String color = "blue";
+    public int speed=slow;
+    public boolean on=false;
+    public double radius =5;
+    public String color = "blue";
+    Fan(){
 
-    public int getSlow() {
-        return slow;
+    }
+    public void setMediumSpeed(){
+        this.speed=medium;
     }
 
-    public int getMedium() {
-        return medium;
-    }
-
-    public int getFast() {
-        return fast;
-    }
-
-    public int getSpeed() {
-        return speed;
-    }
-
-    public void setSpeed(int speed) {
-        this.speed = speed;
+    public void setFastSpeed(){
+        this.speed=fast;
     }
 
     public boolean isOn() {
@@ -52,7 +42,8 @@ public class Fan {
     public void setColor(String color) {
         this.color = color;
     }
-    public void connect(){
-        System.out.println(this.isOn()?String.format("Speed: %d, Color: %s, Radius: %.1f. Fan is On",speed,color,radius):String.format("Color: %s, Radius: %.1f. Fan is Off",color,radius));
+    public String connect(){
+        return this.isOn()? String.format("Speed: %d, Color: %s, Radius: %.1f. Fan is On",speed,color,radius):String.format("Color: %s, Radius: %.1f. Fan is Off",color,radius);
     }
+
 }
