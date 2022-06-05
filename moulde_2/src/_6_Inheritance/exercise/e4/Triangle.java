@@ -12,7 +12,7 @@ public class Triangle extends Shape{
     }
     public double getHeight(){
         double p= (side1+side2+side3)/2;
-        double h=(2*(Math.sqrt(p*(p-side1)*(p-side2)*(p-side3))))/side1;
+        double h = (2*(Math.sqrt(p*(p-side1)*(p-side2)*(p-side3))))/side1;
         return h;
     }
 

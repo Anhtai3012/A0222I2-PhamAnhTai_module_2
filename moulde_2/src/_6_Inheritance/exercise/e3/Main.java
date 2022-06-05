@@ -6,5 +6,6 @@ public class Main {
         System.out.println(point);
         MovablePoint movablePoint = new MovablePoint(2,3,4,5);
         System.out.println(movablePoint);
+        System.out.println();
     }
 }

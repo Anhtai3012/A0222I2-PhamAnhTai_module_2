@@ -1,5 +1,7 @@
 package _6_Inheritance.practice.p1;
 
+import _7_Abstract_Class_and_Interface.exercise.e1.Resizeable;
+
 public class Cricle extends Shape {
     private double radius=1.0 ;
     public Cricle (){

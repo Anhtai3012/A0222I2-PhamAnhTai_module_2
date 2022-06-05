@@ -7,7 +7,8 @@ public class Main {
         Point2D point2D= new Point2D();
         point2D.setXY(1,2);
         System.out.println(point2D);
-        Point3D p = (Point3D) point2D;
-        System.out.println(p.toString());
+        Point2D p1= new Point3D();
+        Point3D p = (Point3D) p1;
+        System.out.println(p);
     }
 }
