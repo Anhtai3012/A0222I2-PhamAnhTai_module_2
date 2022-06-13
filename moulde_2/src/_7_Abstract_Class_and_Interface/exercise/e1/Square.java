@@ -1,6 +1,9 @@
 package _7_Abstract_Class_and_Interface.exercise.e1;
 
-public class Square extends Rectangle implements Resizeable {
+import _7_Abstract_Class_and_Interface.exercise.e2.Colorable;
+
+// implements Resizeable
+public class Square extends Rectangle implements Resizeable,Colorable {
     public Square(){
         super(1,1);
     }
@@ -44,4 +47,10 @@ public class Square extends Rectangle implements Resizeable {
     public void resize(double percent) {
         setSide(getSide()*(percent/100));
     }
+
+    @Override
+    public void howToColor() {
+        System.out.println(""+getColor());
+    }
 }
+
