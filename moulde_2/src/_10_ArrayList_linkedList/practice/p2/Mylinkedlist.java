@@ -49,7 +49,4 @@ public class Mylinkedlist {
             temp = temp.next;
         }
     }
-//    public int size(){
-//        return size;
-//    }
 }
