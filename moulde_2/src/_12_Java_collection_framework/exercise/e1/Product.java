@@ -1,16 +1,20 @@
 package _12_Java_collection_framework.exercise.e1;
 
-public class Product {
+import java.util.List;
+
+public class Product  {
     private int id;
     private String Name;
     private double cost;
 
     public Product(){
     }
-    public Product(int id,String Name, double cost){
-        this.id=id;
+    public Product(String Name, double cost){
         this.Name=Name;
         this.cost= cost;
+    }
+    public void countID(){
+        this.id = (int) (Math.random()*100);
     }
 
     public int getId() {
@@ -26,7 +30,7 @@ public class Product {
     }
 
     public void setName(String name) {
-        Name = name;
+        this.Name = name;
     }
 
     public double getCost() {
@@ -45,4 +49,5 @@ public class Product {
                 ", cost=" + cost +
                 '}';
     }
+
 }

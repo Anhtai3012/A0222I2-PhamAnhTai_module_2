@@ -3,14 +3,14 @@ package _10_ArrayList_linkedList.practice.p2;
 import javax.xml.soap.Node;
 
 public class Mylinkedlist {
-    private Node head;
+    public Node head;
     private int numNodes;
     public Mylinkedlist(Object data){
-        head = new Node(data) ;
+        head = new Node(data);
     }
-    private class Node{
+    private static class Node{
         private  Node next;
-        private Object data;
+        private  Object data;
         public Node(Object data){
              this.data=data;
         }
