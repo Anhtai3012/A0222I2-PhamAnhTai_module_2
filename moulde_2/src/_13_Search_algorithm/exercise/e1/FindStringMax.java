@@ -8,7 +8,7 @@ public class FindStringMax {
 
     public static void main(String[] args) {
         System.out.println("enter String");
-        String string = "welcome";//scanner.nextLine();
+        String string = "Welcome";//scanner.nextLine();
 //       char arr[] = string.toCharArray();
 //       char temp ;
 //        for (int i = 0; i < arr.length; i++) {
@@ -30,7 +30,7 @@ public class FindStringMax {
             list.add(string.charAt(i));
             for (int j = i + 1; j < string.length(); j++) {
                 if (string.charAt(j) > list.getLast()) {
-
+                    System.out.println(list.getLast());
                     list.add(string.charAt(j));
                 }
             }

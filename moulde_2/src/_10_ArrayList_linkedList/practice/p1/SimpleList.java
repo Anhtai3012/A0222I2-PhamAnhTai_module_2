@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class SimpleList<E> {
     private int size = 0;
     private static final int DEFAULT_CAPACITY =10;
-    private Object element[];
+    private E element[];
     public  SimpleList(){
-        element = new Object[DEFAULT_CAPACITY];
+        element =  (E[]) new Object[DEFAULT_CAPACITY];
     }
     private void ensureCapa(){
         int newSize = element.length*2;

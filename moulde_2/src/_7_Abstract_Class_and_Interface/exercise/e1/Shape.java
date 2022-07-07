@@ -1,6 +1,6 @@
 package _7_Abstract_Class_and_Interface.exercise.e1;
 
-public class Shape {
+public abstract class Shape {
     private String color;
     private boolean filled;
 

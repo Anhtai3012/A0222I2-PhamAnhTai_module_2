@@ -1,7 +1,7 @@
 package _14_Sort_algotithm.exercise.e1;
 
 public class InsertionSort {
-    static int [] list ={-3,-156,99,23,25,67,8};
+    static int [] list ={5,8,99,23,25,67,8};
 
     public static void main(String[] args) {
         insertionSort(list);

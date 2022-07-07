@@ -12,14 +12,18 @@ public class ReserveUsingStack {
         System.out.println("Arrays Integer before reserve");
         Arrays.asList(a).forEach(System.out::println);
         Stack<Integer> stack= new Stack<>();
-        Arrays.asList(a).forEach(e->stack.push(e));
 
+        for (Integer integer : a) {
+            stack.push(integer);
+        }
         int size= stack.size();
         for (int i = 0; i < size; i++) {
             a[i]= stack.pop();
         }
 
         System.out.println("Arrays Integer after reserve:");
-        Arrays.asList(a).forEach(System.out::println);
+        for (Integer e: a) {
+            System.out.println(e);
+        }
     }
 }

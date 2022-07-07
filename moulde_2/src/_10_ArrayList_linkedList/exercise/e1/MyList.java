@@ -1,7 +1,7 @@
 package _10_ArrayList_linkedList.exercise.e1;
 
 
-public class MyList<E> {
+public class MyList<E>  {
     private int size = 0;
     private static final int DEFAULT_CAPACITY = 10;
     private E[] element;

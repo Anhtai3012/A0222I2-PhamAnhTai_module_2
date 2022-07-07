@@ -1,16 +1,13 @@
 package _12_Java_collection_framework.exercise.e1;
 
 import javax.print.attribute.standard.PrinterMessageFromOperator;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class ProductManager {
     public List<Product> products;
     public ProductManager(){
-        products = new ArrayList<>();
-      //  products = new LinkedList<>();
+       // products = new ArrayList<>();
+        products = new LinkedList<>();
     }
  public void add(Product e){
      products.add(e);

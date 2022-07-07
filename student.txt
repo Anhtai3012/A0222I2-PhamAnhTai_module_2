@@ -1,0 +1,4 @@
+amber,18,A0222I1,true
+john depp,19,A0222I1,true
+jack,21,A0222I2,true
+marry,20,A0222I2,false
